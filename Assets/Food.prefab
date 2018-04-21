@@ -28,7 +28,7 @@ GameObject:
   - component: {fileID: 199743293161010816}
   m_Layer: 10
   m_Name: Food
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -201,6 +201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4004cf8d2b7ac3c4c90c07003b1775f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreAmount: 500
 --- !u!198 &198234423004315176
 ParticleSystem:
   m_ObjectHideFlags: 1
