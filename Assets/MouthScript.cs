@@ -5,9 +5,10 @@ using UnityEngine;
 public class MouthScript : MonoBehaviour {
 	public ScoreScript scoreScript;
 	public string player;
+	GameObject cameraParent;
 	// Use this for initialization
 	void Start () {
-		
+		cameraParent = GameObject.Find ("CameraParent");
 	}
 	
 	// Update is called once per frame
@@ -20,7 +21,7 @@ public class MouthScript : MonoBehaviour {
 		if (collision.gameObject.tag.Equals("Food")) {
 			scoreScript.addScore (player, 50);
 			Destroy (collision.gameObject);
-			Vector3 cameraPos = Camera.main.transform.position;
+			cameraParent.GetComponent<CameraShake> ().ShakeCamera(0.5f,0.25f);
 		}
 	}
 }
