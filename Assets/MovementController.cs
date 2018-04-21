@@ -7,7 +7,7 @@ public class MovementController : MonoBehaviour {
 	public string inputVertical;
 	private float movementHorizontal;
 	private float movementVertical;
-	private int speed = 300;
+	public int speed = 400;
 	private float velocity;
 	private Rigidbody2D rb;
 
