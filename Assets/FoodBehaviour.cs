@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class FoodBehaviour : MonoBehaviour {
-	public int scoreAmount = 500;
 	// Use this for initialization
 	void Start () {
 	}
