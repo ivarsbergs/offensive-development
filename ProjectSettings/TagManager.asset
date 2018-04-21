@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Fork
   layers:
   - Default
   - TransparentFX
@@ -16,8 +17,8 @@ TagManager:
   - Fork1
   - Fork2
   - Food
-  - 
-  - 
+  - Head1
+  - Head2
   - 
   - 
   - 
