@@ -723,7 +723,7 @@ MonoBehaviour:
       defaultLocalRotation: {x: 0, y: 0, z: 0.0021324565, w: 0.9999978}
     m_Weight: 1
     m_RestoreDefaultPose: 1
-    targetPosition: {x: -5.9000006, y: -4.64, z: -2}
+    targetPosition: {x: -5.9000006, y: -4.64, z: 1}
     flip: 0
 --- !u!4 &416713695
 Transform:
@@ -15475,10 +15475,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugMode: 0
-  shakeAmount: 0.5
-  shakeDuration: 0.5
-  smooth: 0
-  smoothAmount: 5
+  shakeAmount: 19.43
+  shakeDuration: 6.17
+  smooth: 1
+  smoothAmount: 1.05
 --- !u!4 &865927103
 Transform:
   m_ObjectHideFlags: 0
@@ -33487,7 +33487,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1423636198}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.8841635, y: 1.7564657, z: -10}
+  m_LocalPosition: {x: -1.8841635, y: 1.7564657, z: -10.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 865927103}
@@ -44087,7 +44087,7 @@ MonoBehaviour:
       defaultLocalRotation: {x: 0, y: 0, z: 0.0021324565, w: 0.9999978}
     m_Weight: 1
     m_RestoreDefaultPose: 1
-    targetPosition: {x: 6.1900005, y: -2.0299997, z: -2}
+    targetPosition: {x: 6.1900005, y: -2.0299997, z: 1}
     flip: 0
 --- !u!50 &1538923714
 Rigidbody2D:

@@ -21,7 +21,7 @@ public class MouthScript : MonoBehaviour {
 		if (collision.gameObject.tag.Equals("Food")) {
 			scoreScript.addScore (player, 50);
 			Destroy (collision.gameObject);
-			cameraParent.GetComponent<CameraShake> ().ShakeCamera(0.5f,0.25f);
+			cameraParent.GetComponent<CameraShake> ().ShakeCamera(20.0f, 2.0f);
 		}
 	}
 }
