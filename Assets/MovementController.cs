@@ -8,6 +8,7 @@ public class MovementController : MonoBehaviour {
 	private float movementHorizontal;
 	private float movementVertical;
 	public int speed = 400;
+	private float jitterAmount = 0.2f;
 	private float velocity;
 	private Rigidbody2D rb;
 
@@ -24,14 +25,14 @@ public class MovementController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Random.value < 0.5d) {
-			movementHorizontal = Input.GetAxis (inputHorizontal) + Random.value * 0.3f;
+			movementHorizontal = Input.GetAxis (inputHorizontal) + Random.value * jitterAmount;
 		} else {
-			movementHorizontal = Input.GetAxis (inputHorizontal) - Random.value * 0.3f;
+			movementHorizontal = Input.GetAxis (inputHorizontal) - Random.value * jitterAmount;
 		}
 		if (Random.value < 0.5d) {
-			movementVertical = Input.GetAxis (inputVertical) + Random.value * 0.3f;
+			movementVertical = Input.GetAxis (inputVertical) + Random.value * jitterAmount;
 		} else {
-			movementVertical = Input.GetAxis (inputVertical) - Random.value * 0.3f;
+			movementVertical = Input.GetAxis (inputVertical) - Random.value * jitterAmount;
 		}
 		Vector2 movementDirection = new Vector2 (movementHorizontal, movementVertical);
 

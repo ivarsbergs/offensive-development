@@ -275,7 +275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4c8829f347acd0429cbd62624ff7241, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sushi: {fileID: 1899893081157096, guid: 83be52e5a6c98484da198d2f15da17b1, type: 2}
+  sushi: {fileID: 1899893081157096, guid: e82d82b1ef25f8f4dacf79ddcdb0a716, type: 2}
 --- !u!4 &826327594
 Transform:
   m_ObjectHideFlags: 0
