@@ -26,6 +26,7 @@ public class BleedingSpot : MonoBehaviour
             {
                 GameControl.Instance.ChangeScore(1, -5);
             }
-        }
+			Camera.main.gameObject.GetComponent<CameraShake>().Shake(0.15f);
+		}
     }
 }
