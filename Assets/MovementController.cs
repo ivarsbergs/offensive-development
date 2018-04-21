@@ -11,6 +11,7 @@ public class MovementController : MonoBehaviour {
 	private float jitterAmount = 0.15f;
 	private float velocity;
 	private Rigidbody2D rb;
+	private Vector2 movementDirection;
 
 	// Use this for initialization
 	void Start () {
@@ -34,8 +35,27 @@ public class MovementController : MonoBehaviour {
 		} else {
 			movementVertical = Input.GetAxis (inputVertical) - Random.value * jitterAmount;
 		}
-		Vector2 movementDirection = new Vector2 (movementHorizontal, movementVertical);
 
+		/*
+		if ((transform.position.x > 6.0f && movementHorizontal > 0) || (transform.position.x < -8.0f && movementHorizontal < 0)) {
+			if (Random.value < 0.5d) {
+				movementHorizontal = Random.value * jitterAmount;
+			} else {
+				movementHorizontal = Random.value * -jitterAmount;
+			}
+			movementDirection = new Vector2 (movementHorizontal, movementVertical);
+		} else if ((transform.position.y > 5.0f && movementVertical > 0)|| (transform.position.y < -12.0f && movementVertical < 0)) {
+			if (Random.value < 0.5d) {
+				movementVertical = Random.value * jitterAmount;
+			} else {
+				movementVertical = Random.value * -jitterAmount;
+			}
+			movementDirection = new Vector2 (movementHorizontal, movementVertical);
+		} else {
+			movementDirection = new Vector2 (movementHorizontal, movementVertical);
+		}
+		*/
+		movementDirection = new Vector2 (movementHorizontal, movementVertical);
 		rb.velocity = movementDirection * speed * Time.deltaTime;
 	}
 }
