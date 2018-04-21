@@ -37,6 +37,5 @@ public class MovementController : MonoBehaviour {
 		Vector2 movementDirection = new Vector2 (movementHorizontal, movementVertical);
 
 		rb.velocity = movementDirection * speed * Time.deltaTime;
-		Debug.Log (transform.position);
 	}
 }
