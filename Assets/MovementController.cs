@@ -13,6 +13,11 @@ public class MovementController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		Debug.Log (Input.GetAxis (inputVertical));
+		if (Input.GetAxis (inputVertical) == -1.0 && inputVertical.Equals ("Vertical2")) {
+			inputVertical = "Vertical2PS3";
+			inputHorizontal = "Horizontal2PS3";
+		}
 		rb = this.GetComponent<Rigidbody2D>();
 	}
 	
@@ -28,8 +33,6 @@ public class MovementController : MonoBehaviour {
 		} else {
 			movementVertical = Input.GetAxis (inputVertical) - Random.value * 0.3f;
 		}
-		Debug.Log (movementHorizontal);
-		Debug.Log(movementVertical);
 		Vector2 movementDirection = new Vector2 (movementHorizontal, movementVertical);
 
 		rb.velocity = movementDirection * speed * Time.deltaTime;
