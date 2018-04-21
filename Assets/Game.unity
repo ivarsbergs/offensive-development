@@ -244,6 +244,7 @@ GameObject:
   - component: {fileID: 617965104}
   - component: {fileID: 617965103}
   - component: {fileID: 617965105}
+  - component: {fileID: 617965106}
   m_Layer: 8
   m_Name: Fork1
   m_TagString: Untagged
@@ -340,7 +341,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 617965101}
-  m_BodyType: 2
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -353,6 +354,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &617965106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 617965101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9990bc10f437aa342a47b245d3b5d1a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputHorizontal: Horizontal1
+  inputVertical: Vertical1
 --- !u!1 &1027235130
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,6 +499,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9990bc10f437aa342a47b245d3b5d1a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputHorizontal: Horizontal2
+  inputVertical: Vertical2
 --- !u!1 &1423636198
 GameObject:
   m_ObjectHideFlags: 0
