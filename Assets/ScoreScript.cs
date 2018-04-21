@@ -37,4 +37,13 @@ public class ScoreScript : MonoBehaviour {
 			player1UI.GetComponent<UnityEngine.UI.Text> ().text = ("Player 2 won!");
 		}
 	}
+	public void removeScore(string player, int score) {
+		if (player.Equals ("Player1")) {
+			player1Score -= score;
+		} else {
+			player2Score -= score;
+		}
+		player1UI.GetComponent<UnityEngine.UI.Text> ().text = ("Player 1: " + player1Score);
+		player2UI.GetComponent<UnityEngine.UI.Text> ().text = ("Player 2: " + player2Score);
+	}
 }
