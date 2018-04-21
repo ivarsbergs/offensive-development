@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Material.006
+  m_Name: Lantern
   m_Shader: {fileID: 4800000, guid: d84268709d11078d11005b9844295342, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -64,7 +64,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
-    - _Glossiness: 0
+    - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
@@ -76,5 +76,5 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.37586206, g: 0.27949136, b: 0.2773498, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+    - _Color: {r: 0.43793103, g: 0.33981326, b: 0.31878802, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
