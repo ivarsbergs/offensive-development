@@ -15477,10 +15477,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugMode: 0
-  shakeAmount: 0.5
-  shakeDuration: 0.5
-  smooth: 0
-  smoothAmount: 5
+  shakeAmount: 19.43
+  shakeDuration: 6.17
+  smooth: 1
+  smoothAmount: 1.05
 --- !u!4 &865927103
 Transform:
   m_ObjectHideFlags: 0
@@ -33489,7 +33489,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1423636198}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.8841635, y: 1.7564657, z: -10}
+  m_LocalPosition: {x: -1.8841635, y: 1.7564657, z: -10.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 865927103}
