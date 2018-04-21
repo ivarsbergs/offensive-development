@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class BleedingSpot : MonoBehaviour
 {
-	GameObject scoreScript;
     public ParticleSystem BloodParticle;
 
     void Start()
     {
-		scoreScript = GameObject.Find ("ScoreKeeper");
     }
 
     void Update()
@@ -19,12 +17,15 @@ public class BleedingSpot : MonoBehaviour
     {
         if (colider.gameObject.tag == "Fork")
         {
-			BloodParticle.Play();
-			if (transform.position.x < 0) {
-				scoreScript.GetComponent<ScoreScript> ().removeScore ("Player2", 5);
-			} else if (transform.position.x > 0) {
-				scoreScript.GetComponent<ScoreScript> ().removeScore ("Player1", 5);
-			}
+            BloodParticle.Play();
+            if (transform.position.x < 0)
+            {
+                GameControl.Instance.ChangeScore(2, -5);
+            }
+            else if (transform.position.x > 0)
+            {
+                GameControl.Instance.ChangeScore(1, -5);
+            }
         }
     }
 }
