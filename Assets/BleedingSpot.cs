@@ -16,10 +16,8 @@ public class BleedingSpot : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D colider)
     {
-        Debug.Log("Enter before check!" + colider.gameObject.tag);
         if (colider.gameObject.tag == "Fork")
         {
-            Debug.Log("Enter!");
             this.BloodParticle.Play();
         }
     }
