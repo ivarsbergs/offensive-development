@@ -8,7 +8,7 @@ public class MovementController : MonoBehaviour {
 	private float movementHorizontal;
 	private float movementVertical;
 	private int speed = 600;
-	private float jitterAmount = 0.2f;
+	private float jitterAmount = 0.15f;
 	private float velocity;
 	private Rigidbody2D rb;
 
@@ -37,5 +37,6 @@ public class MovementController : MonoBehaviour {
 		Vector2 movementDirection = new Vector2 (movementHorizontal, movementVertical);
 
 		rb.velocity = movementDirection * speed * Time.deltaTime;
+		Debug.Log (transform.position);
 	}
 }

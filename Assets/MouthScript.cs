@@ -18,8 +18,9 @@ public class MouthScript : MonoBehaviour {
 	void OnTriggerEnter2D (Collider2D collision) {
 		Debug.Log (player);
 		if (collision.gameObject.tag.Equals("Food")) {
-			scoreScript.addScore (player, 500);
+			scoreScript.addScore (player, 50);
 			Destroy (collision.gameObject);
+			Vector3 cameraPos = Camera.main.transform.position;
 		}
 	}
 }
