@@ -69,7 +69,7 @@ public class AudioControl : MonoBehaviour {
 		}
 	}
 	public void playFood() {
-		audioSource.PlayOneShot (foodSpawn, highVolume);
+		audioSource.PlayOneShot (foodSpawn, veryLowVolume);
 	}
 	public void forkClash() {
 		int forkSound = Random.Range (0, 1);
