@@ -140,7 +140,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4c8829f347acd0429cbd62624ff7241, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  food: {fileID: 1899893081157096, guid: e82d82b1ef25f8f4dacf79ddcdb0a716, type: 2}
 --- !u!4 &40606771
 Transform:
   m_ObjectHideFlags: 0
@@ -7778,6 +7777,9 @@ PolygonCollider2D:
     m_Paths:
     - - {x: -10.31, y: 13.96}
       - {x: -10.42, y: 3.02}
+      - {x: -9.438553, y: 8.575974}
+      - {x: -8.619484, y: 10.61634}
+      - {x: -6.452772, y: 12.725032}
       - {x: -2.27, y: 14.09}
 --- !u!60 &359252456
 PolygonCollider2D:
@@ -7805,6 +7807,9 @@ PolygonCollider2D:
     m_Paths:
     - - {x: 3.53, y: 2.79}
       - {x: -4.21, y: 2.78}
+      - {x: -0.5266452, y: 1.6802511}
+      - {x: 1.6474614, y: -0.22281456}
+      - {x: 2.8210626, y: -2.6547394}
       - {x: 3.56, y: -7.53}
 --- !u!61 &359252457
 BoxCollider2D:
@@ -68578,14 +68583,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c1e3a75459e2495fabac6d115f9ade9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Running: 1
+  GameOver: 0
+  Moved: 0
   MaxScore: 150
   Player1Score: 0
   Player2Score: 0
   Player1ScroreText: {fileID: 2060419083}
   Player2ScroreText: {fileID: 1103023743}
-  GameOver: {fileID: 2052678359}
+  GameOverPanel: {fileID: 0}
   WinnerText: {fileID: 1257232070}
+  FoodPrefab: {fileID: 0}
+  Player1HitpointsFill: {fileID: 0}
+  Player2HitpointsFill: {fileID: 0}
+  Tutorial: {fileID: 0}
+  RiceEnding: {fileID: 0}
 --- !u!1 &1926563514
 GameObject:
   m_ObjectHideFlags: 0
