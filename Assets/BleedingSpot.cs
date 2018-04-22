@@ -17,6 +17,7 @@ public class BleedingSpot : MonoBehaviour
     {
         if (colider.gameObject.tag == "Fork")
         {
+			AudioControl.Instance.playHurt ();
             BloodParticle.Play();
             if (transform.position.x < 0)
             {
