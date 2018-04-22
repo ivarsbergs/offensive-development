@@ -386,9 +386,8 @@ MonoBehaviour:
   stab4: {fileID: 8300000, guid: 623321e8392b57b43a02f0a10c41fd46, type: 3}
   foodSpawn: {fileID: 8300000, guid: 16da369988623fa4fa0e405398f7204a, type: 3}
   foodDeSpawn: {fileID: 8300000, guid: 4b1655116b979484693ea8ef5a4c7d25, type: 3}
-  forks1: {fileID: 8300000, guid: a406442dc0979fa498031fab8362f8bb, type: 3}
-  forks2: {fileID: 8300000, guid: b6628703db4404b458a52ddebfdddc5f, type: 3}
-  forks3: {fileID: 8300000, guid: 26255f2cbdd38fd4299283cd063f6d21, type: 3}
+  forks1: {fileID: 8300000, guid: b6628703db4404b458a52ddebfdddc5f, type: 3}
+  forks2: {fileID: 8300000, guid: 26255f2cbdd38fd4299283cd063f6d21, type: 3}
   man1: {fileID: 8300000, guid: a3ef89ccc32eefb42b3c98d564135f4b, type: 3}
   man2: {fileID: 8300000, guid: 7b3b1f0c91fa22b4a8b6dcafe73eac67, type: 3}
   man3: {fileID: 8300000, guid: 415f04533b162b242a190b24ff56e8fd, type: 3}
@@ -400,3 +399,7 @@ MonoBehaviour:
   bounce2: {fileID: 8300000, guid: b6b6b15e6f7c75b4489985684f38103a, type: 3}
   bounce3: {fileID: 8300000, guid: f5d331f8d4312ba4fbfceccd6c206bf8, type: 3}
   bounce4: {fileID: 8300000, guid: 9584bdd844c649b4e93e1d8979d0c06a, type: 3}
+  headBounce1: {fileID: 8300000, guid: debfce136dda29c4e8166c84f73780d8, type: 3}
+  headBounce2: {fileID: 8300000, guid: 85a4c5b11c42db4458e7bbfc6775d5ca, type: 3}
+  headBounce3: {fileID: 8300000, guid: 0c608cfad9d6140469dffb5d0570ca35, type: 3}
+  headBounce4: {fileID: 8300000, guid: 426ca80def2ddfd4bbc6e7ac3c350ad6, type: 3}
