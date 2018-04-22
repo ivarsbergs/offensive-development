@@ -1,54 +1,22 @@
 fileFormatVersion: 2
-guid: 43101def774b54f4495f576bbab14fec
-timeCreated: 1524385372
+guid: aa45372722f8e2248a9e0e6dc5564b86
+timeCreated: 1524395917
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Cube.002
-    100002: Cube.030
-    100004: Cube.031
-    100006: Cube.032
-    100008: Cube.033
-    100010: Cube.034
-    100012: Cube.035
-    100014: //RootNode
-    400000: Cube.002
-    400002: Cube.030
-    400004: Cube.031
-    400006: Cube.032
-    400008: Cube.033
-    400010: Cube.034
-    400012: Cube.035
-    400014: //RootNode
-    2100000: No Name
-    2300000: Cube.002
-    2300002: Cube.030
-    2300004: Cube.031
-    2300006: Cube.032
-    2300008: Cube.033
-    2300010: Cube.034
-    2300012: Cube.035
-    3300000: Cube.002
-    3300002: Cube.030
-    3300004: Cube.031
-    3300006: Cube.032
-    3300008: Cube.033
-    3300010: Cube.034
-    3300012: Cube.035
-    4300000: Cube.035
-    4300002: Cube.034
-    4300004: Cube.033
-    4300006: Cube.032
-    4300008: Cube.031
-    4300010: Cube.030
-    4300012: Cube.002
+    100000: //RootNode
+    400000: //RootNode
+    2100000: Menu
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Plane
   externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
