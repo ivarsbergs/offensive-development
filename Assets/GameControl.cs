@@ -20,6 +20,7 @@ public class GameControl : MonoBehaviour
     public UnityEngine.UI.Image Player1HitpointsFill;
     public UnityEngine.UI.Image Player2HitpointsFill;
     public GameObject Tutorial;
+    public ParticleSystem RiceEnding;
 
     void Awake()
     {
@@ -66,6 +67,7 @@ public class GameControl : MonoBehaviour
                 this.GameOverPanel.SetActive(true);
                 this.GameOver = true;
                 this.WinnerText.text = "PLAYER 1 WON";
+                this.RiceEnding.Play();
             }
             else if (this.Player1Score < 0)
             {
@@ -84,6 +86,7 @@ public class GameControl : MonoBehaviour
                 this.GameOverPanel.SetActive(true);
                 this.GameOver = true;
                 this.WinnerText.text = "PLAYER 2 WON";
+                this.RiceEnding.Play();
             }
             else if (this.Player2Score < 0)
             {
