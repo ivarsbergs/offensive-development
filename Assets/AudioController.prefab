@@ -399,5 +399,4 @@ MonoBehaviour:
   bounce1: {fileID: 8300000, guid: bf84a0c9ff4190f4c8eb74a3e710243c, type: 3}
   bounce2: {fileID: 8300000, guid: b6b6b15e6f7c75b4489985684f38103a, type: 3}
   bounce3: {fileID: 8300000, guid: f5d331f8d4312ba4fbfceccd6c206bf8, type: 3}
-  bounce4: {fileID: 8300000, guid: 9b75157ecda05bc4bbc50c9b35c8dcf9, type: 3}
-  bounce5: {fileID: 8300000, guid: 9584bdd844c649b4e93e1d8979d0c06a, type: 3}
+  bounce4: {fileID: 8300000, guid: 9584bdd844c649b4e93e1d8979d0c06a, type: 3}

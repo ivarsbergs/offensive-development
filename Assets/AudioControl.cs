@@ -15,7 +15,6 @@ public class AudioControl : MonoBehaviour {
 	public AudioClip foodDeSpawn;
 	public AudioClip forks1;
 	public AudioClip forks2;
-	public AudioClip forks3;
 	public AudioClip man1;
 	public AudioClip man2;
 	public AudioClip man3;
@@ -27,7 +26,10 @@ public class AudioControl : MonoBehaviour {
 	public AudioClip bounce2;
 	public AudioClip bounce3;
 	public AudioClip bounce4;
-	public AudioClip bounce5;
+	public AudioClip headBounce1;
+	public AudioClip headBounce2;
+	public AudioClip headBounce3;
+	public AudioClip headBounce4;
 	private AudioSource audioSource; 
 	private float veryLowVolume = 0.2f;
 	private float lowVolume = 0.5f;
@@ -70,13 +72,11 @@ public class AudioControl : MonoBehaviour {
 		audioSource.PlayOneShot (foodSpawn, highVolume);
 	}
 	public void forkClash() {
-		int forkSound = Random.Range (0, 2);
+		int forkSound = Random.Range (0, 1);
 		if (forkSound == 0) {
-			audioSource.PlayOneShot (forks1, lowVolume);
+			audioSource.PlayOneShot (forks1, veryLowVolume);
 		} else if (forkSound == 1) {
-			audioSource.PlayOneShot (forks2, lowVolume);
-		} else if (forkSound == 2) {
-			audioSource.PlayOneShot (forks3, lowVolume);
+			audioSource.PlayOneShot (forks2, veryLowVolume);
 		}
 	}
 	public void manEat() {
@@ -102,7 +102,7 @@ public class AudioControl : MonoBehaviour {
 		}
 	}
 	public void forkBounce() {
-		int forkSound = Random.Range (0, 4);
+		int forkSound = Random.Range (0, 3);
 		if (forkSound == 0) {
 			audioSource.PlayOneShot (bounce1, mediumVolume);
 		} else if (forkSound == 1) {
@@ -111,8 +111,18 @@ public class AudioControl : MonoBehaviour {
 			audioSource.PlayOneShot (bounce3, mediumVolume);
 		} else if (forkSound == 3) {
 			audioSource.PlayOneShot (bounce4, mediumVolume);
-		} else if (forkSound == 4) {
-			audioSource.PlayOneShot (bounce5, mediumVolume);
+		}
+	}
+	public void headBounce() {
+		int headSound = Random.Range (0, 3);
+		if (headSound == 0) {
+			audioSource.PlayOneShot (headBounce1, mediumVolume);
+		} else if (headSound == 1) {
+			audioSource.PlayOneShot (headBounce2, mediumVolume);
+		} else if (headSound == 2) {
+			audioSource.PlayOneShot (headBounce3, mediumVolume);
+		} else if (headSound == 3) {
+			audioSource.PlayOneShot (headBounce4, mediumVolume);
 		}
 	}
 	public void deSpawnFood() {

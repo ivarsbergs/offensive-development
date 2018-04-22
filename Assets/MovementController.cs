@@ -9,7 +9,7 @@ public class MovementController : MonoBehaviour
     private float movementHorizontal;
     private float movementVertical;
     private int speed = 600;
-    private float jitterAmount = 0.15f;
+    private float jitterAmount = 0f;
     private float velocity;
     private Rigidbody2D rb;
 
@@ -31,19 +31,19 @@ public class MovementController : MonoBehaviour
         {
             if (Random.value < 0.5d)
             {
-                movementHorizontal = Input.GetAxis(inputHorizontal) /*+ Random.value * jitterAmount*/;
+                movementHorizontal = Input.GetAxis(inputHorizontal) + Random.value * jitterAmount;
             }
             else
             {
-                movementHorizontal = Input.GetAxis(inputHorizontal) /*- Random.value * jitterAmount*/;
+                movementHorizontal = Input.GetAxis(inputHorizontal) - Random.value * jitterAmount;
             }
             if (Random.value < 0.5d)
             {
-                movementVertical = Input.GetAxis(inputVertical) /*+ Random.value * jitterAmount*/;
+                movementVertical = Input.GetAxis(inputVertical) + Random.value * jitterAmount;
             }
             else
             {
-                movementVertical = Input.GetAxis(inputVertical) /*- Random.value * jitterAmount*/;
+                movementVertical = Input.GetAxis(inputVertical) - Random.value * jitterAmount;
             }
             if (!GameControl.Instance.Moved)
             {

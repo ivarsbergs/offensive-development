@@ -10,6 +10,8 @@ public class FoodBehaviour : MonoBehaviour
 		Debug.Log (collision.gameObject.tag);
 		if (collision.gameObject.tag == "Fork") {
 			AudioControl.Instance.forkBounce ();
+		} else {
+			AudioControl.Instance.headBounce ();
 		}
     }
 }
