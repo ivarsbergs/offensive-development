@@ -48,4 +48,9 @@ public class CameraShake : MonoBehaviour
     {
         this.shakeDuration = duration;
     }
+
+    public void DisableAnimation()
+    {
+        this.GetComponent<Animator>().enabled = false;
+    }
 }
