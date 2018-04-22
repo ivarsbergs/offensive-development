@@ -12,6 +12,7 @@ public class AudioControl : MonoBehaviour {
 	public AudioClip stab3;
 	public AudioClip stab4;
 	public AudioClip foodSpawn;
+	public AudioClip foodDeSpawn;
 	public AudioClip forks1;
 	public AudioClip forks2;
 	public AudioClip forks3;
@@ -22,7 +23,13 @@ public class AudioControl : MonoBehaviour {
 	public AudioClip woman1;
 	public AudioClip woman2;
 	public AudioClip woman3;
+	public AudioClip bounce1;
+	public AudioClip bounce2;
+	public AudioClip bounce3;
+	public AudioClip bounce4;
+	public AudioClip bounce5;
 	private AudioSource audioSource; 
+	private float veryLowVolume = 0.2f;
 	private float lowVolume = 0.5f;
 	private float mediumVolume = 0.7f;
 	private float highVolume = 1.0f;
@@ -93,5 +100,22 @@ public class AudioControl : MonoBehaviour {
 		} else if (eatSound == 2) {
 			audioSource.PlayOneShot (woman3, mediumVolume);
 		}
+	}
+	public void forkBounce() {
+		int forkSound = Random.Range (0, 4);
+		if (forkSound == 0) {
+			audioSource.PlayOneShot (bounce1, mediumVolume);
+		} else if (forkSound == 1) {
+			audioSource.PlayOneShot (bounce2, mediumVolume);
+		} else if (forkSound == 2) {
+			audioSource.PlayOneShot (bounce3, mediumVolume);
+		} else if (forkSound == 3) {
+			audioSource.PlayOneShot (bounce4, mediumVolume);
+		} else if (forkSound == 4) {
+			audioSource.PlayOneShot (bounce5, mediumVolume);
+		}
+	}
+	public void deSpawnFood() {
+		audioSource.PlayOneShot (foodDeSpawn, veryLowVolume);
 	}
 }

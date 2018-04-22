@@ -44,6 +44,7 @@ public class GameControl : MonoBehaviour
         else if (this.spawnedFood != null && (this.spawnedFood.transform.position.y < -14.0f || this.spawnedFood.transform.position.y > 12.0f || this.spawnedFood.transform.position.x < -30.0f || this.spawnedFood.transform.position.x > 30.0f))
         {
             Destroy(this.spawnedFood, 1.0f);
+			AudioControl.Instance.deSpawnFood ();
             if (!this.GameOver)
             {
                 this.spawnFood();

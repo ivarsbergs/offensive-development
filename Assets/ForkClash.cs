@@ -13,4 +13,9 @@ public class ForkClash : MonoBehaviour {
 	void Update () {
 		
 	}
+
+	void onTriggerEnter2D (Collider2D collider) {
+		AudioControl.Instance.forkClash ();
+		Debug.Log ("Clashed!");
+	}
 }
