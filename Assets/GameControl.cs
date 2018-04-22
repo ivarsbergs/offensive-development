@@ -28,7 +28,7 @@ public class GameControl : MonoBehaviour
         this.spawnedFood = null;
         this.GameOver = false;
 
-        Invoke("ShowTutorial", 5f);
+        Invoke("ShowTutorial", 3f);
     }
 
     void Start()
