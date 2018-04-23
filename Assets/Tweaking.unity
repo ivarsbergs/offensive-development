@@ -17946,14 +17946,14 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 8.259743, y: 1.2783146}
-      - {x: 7.7772427, y: 0.86152744}
-      - {x: 4.1094456, y: 0.6436901}
-      - {x: 4.251072, y: 0.26150894}
-      - {x: 7.838705, y: 0.31303263}
-      - {x: 8.08243, y: -0.0726428}
-      - {x: 10.041883, y: -0.0013809204}
-      - {x: 9.930075, y: 1.3066854}
+    - - {x: 6.8728714, y: 0.69672394}
+      - {x: 6.5693226, y: 0.3470435}
+      - {x: 3.3489037, y: 0.75553465}
+      - {x: 3.4010544, y: 0.41809082}
+      - {x: 6.474203, y: -0.08960724}
+      - {x: 6.6508217, y: -0.5871272}
+      - {x: 8.453693, y: -1.0079803}
+      - {x: 8.766893, y: 0.434299}
 --- !u!50 &913322835
 Rigidbody2D:
   serializedVersion: 4
@@ -18025,14 +18025,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 980371403}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.21, y: 0.62, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -0.095845714, w: 0.99539626}
+  m_LocalPosition: {x: 6.14, y: 0.26, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 1924898536}
   m_Father: {fileID: 1164108105}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -11}
 --- !u!114 &980371405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36238,14 +36238,14 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 8.259743, y: 1.2783146}
-      - {x: 7.7772427, y: 0.86152744}
+    - - {x: 8.124064, y: 0.5245447}
+      - {x: 7.7470903, y: 0.24343634}
       - {x: 4.1094456, y: 0.6436901}
-      - {x: 4.251072, y: 0.26150894}
-      - {x: 7.838705, y: 0.31303263}
-      - {x: 8.08243, y: -0.0726428}
-      - {x: 10.041883, y: -0.0013809204}
-      - {x: 9.930075, y: 1.3066854}
+      - {x: 4.091544, y: 0.37317848}
+      - {x: 7.748252, y: -0.2749076}
+      - {x: 7.9015245, y: -0.7661114}
+      - {x: 9.695149, y: -1.1018848}
+      - {x: 9.945149, y: 0.19110632}
 --- !u!114 &1164108104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54936,14 +54936,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1483239767}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.91, y: 0.8, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -0.095845714, w: 0.99539626}
+  m_LocalPosition: {x: 4.91, y: 0.44, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 250211017}
   m_Father: {fileID: 913322837}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -11}
 --- !u!114 &1483239769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70925,7 +70925,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -937395869
+  randomSeed: 678295048
   InitialModule:
     serializedVersion: 3
     enabled: 1
