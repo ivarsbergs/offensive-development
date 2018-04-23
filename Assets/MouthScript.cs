@@ -18,6 +18,7 @@ public class MouthScript : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Food"))
         {
+			this.GetComponent<ParticleSystem>().Play();
             int player = this.gameObject.layer == LayerMask.NameToLayer("Head1") ? 2 : 1;
 			if (player == 2) {
 				AudioControl.Instance.manEat ();

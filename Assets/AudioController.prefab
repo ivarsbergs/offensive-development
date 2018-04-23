@@ -213,7 +213,8 @@ AudioSource:
   m_GameObject: {fileID: 1792330780279114}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243466761422960468, guid: c05f4a104968cfe4badab7ce7f98d17c,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -272,7 +273,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -295,9 +296,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243460514969711302, guid: c05f4a104968cfe4badab7ce7f98d17c,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 1b0e4402109d21a4e8a3350583f5a26b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 336e4edf39e363247aae99839ba6c335, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.174
+  m_Volume: 0.224
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -384,7 +385,7 @@ MonoBehaviour:
   stab2: {fileID: 8300000, guid: 63597bd1b76a7ab4a9da7edfb432bb24, type: 3}
   stab3: {fileID: 8300000, guid: 446ced25143a5a84e9189522ca60bc59, type: 3}
   stab4: {fileID: 8300000, guid: 623321e8392b57b43a02f0a10c41fd46, type: 3}
-  foodSpawn: {fileID: 8300000, guid: 16da369988623fa4fa0e405398f7204a, type: 3}
+  foodSpawn: {fileID: 8300000, guid: 1623c8696273b3243a6bfccac0c760a3, type: 3}
   foodDeSpawn: {fileID: 8300000, guid: 4b1655116b979484693ea8ef5a4c7d25, type: 3}
   forks1: {fileID: 8300000, guid: b6628703db4404b458a52ddebfdddc5f, type: 3}
   forks2: {fileID: 8300000, guid: 26255f2cbdd38fd4299283cd063f6d21, type: 3}
